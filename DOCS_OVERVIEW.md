@@ -10,6 +10,31 @@ This document provides a guide to all project documentation and how to navigate 
 ├── 📖 README.md ← START HERE
 │   └── Main entry point with project overview and quick links
 │
+├── 🚀 GETTING_STARTED.md - "Quick start guide"
+│   ├── Installation instructions
+│   ├── First scan tutorial
+│   ├── Troubleshooting
+│   └── Usage examples
+│
+├── 💻 MVP_IMPLEMENTATION.md - "Full MVP technical details"
+│   ├── What's included in Full MVP
+│   ├── Technology stack
+│   ├── Architecture diagrams
+│   ├── API documentation
+│   └── Deployment guide
+│
+├── ⚡ VERY_MVP.md - "3-hour minimal version"
+│   ├── Ultra-minimal CLI-only scope
+│   ├── What to build in 3 hours
+│   ├── Basic translation logic
+│   └── Concept validation focus
+│
+├── 📊 MVP_COMPARISON.md - "Full MVP vs Very MVP"
+│   ├── Feature comparison
+│   ├── Complexity comparison
+│   ├── Use case guidance
+│   └── Decision framework
+│
 ├── 📘 WHY.md - "Why we build this"
 │   ├── Problem we're solving
 │   ├── Business rationale
@@ -42,12 +67,23 @@ This document provides a guide to all project documentation and how to navigate 
 
 ## Reading Paths
 
+### For Getting Started Quickly
+1. **GETTING_STARTED.md** - Installation and first scan
+2. **README.md** - Project overview
+3. **MVP_IMPLEMENTATION.md** - Understanding what's built
+
+### For Understanding MVP Options
+1. **MVP_COMPARISON.md** - Full MVP vs Very MVP comparison
+2. **VERY_MVP.md** - If considering 3-hour minimal version
+3. **MVP_IMPLEMENTATION.md** - If using Full MVP (PR #9)
+
 ### For New Contributors
 1. Start with **README.md** - Get project overview
-2. Read **WHY.md** - Understand the motivation
-3. Read **WHAT.md** - Understand what we're building
-4. Scan **DEV_SCOPE.md** - Understand project boundaries
-5. Dive into **ARCHITECTURE.md** when ready to code
+2. Read **GETTING_STARTED.md** - Try it yourself
+3. Read **WHY.md** - Understand the motivation
+4. Read **WHAT.md** - Understand what we're building
+5. Scan **DEV_SCOPE.md** - Understand project boundaries
+6. Dive into **ARCHITECTURE.md** when ready to code
 
 ### For Designers
 1. **UX_PRINCIPLES.md** - Complete UX guidelines
@@ -55,21 +91,25 @@ This document provides a guide to all project documentation and how to navigate 
 3. **WHY.md** - User problems we're solving
 
 ### For Product Managers
-1. **WHAT.md** - Product concept and differentiation
-2. **WHY.md** - Market need and value proposition
-3. **DEV_SCOPE.md** - Development phases and roadmap
-4. **UX_PRINCIPLES.md** - User experience goals
+1. **MVP_COMPARISON.md** - Understanding MVP options
+2. **WHAT.md** - Product concept and differentiation
+3. **WHY.md** - Market need and value proposition
+4. **DEV_SCOPE.md** - Development phases and roadmap
+5. **UX_PRINCIPLES.md** - User experience goals
 
 ### For Engineers
-1. **ARCHITECTURE.md** - Technical architecture and stack
-2. **DEV_SCOPE.md** - Scope and technical constraints
-3. **WHAT.md** - Product features to implement
-4. **UX_PRINCIPLES.md** - Frontend requirements
+1. **GETTING_STARTED.md** - Set up development environment
+2. **ARCHITECTURE.md** - Technical architecture and stack
+3. **MVP_IMPLEMENTATION.md** - Implementation details
+4. **DEV_SCOPE.md** - Scope and technical constraints
+5. **WHAT.md** - Product features to implement
+6. **UX_PRINCIPLES.md** - Frontend requirements
 
 ### For Business Stakeholders
 1. **WHY.md** - Business case and value
 2. **WHAT.md** - Product overview and use cases
-3. **README.md** - Quick reference
+3. **MVP_COMPARISON.md** - Understanding implementation options
+4. **README.md** - Quick reference
 
 ## Key Concepts
 
@@ -103,6 +143,10 @@ UX_PRINCIPLES (How Users Experience)
 
 | Question | Document |
 |----------|----------|
+| How do I get started? | GETTING_STARTED.md |
+| What's the difference between MVPs? | MVP_COMPARISON.md |
+| How do I build a 3-hour version? | VERY_MVP.md |
+| What's in the Full MVP? | MVP_IMPLEMENTATION.md |
 | Why does this project exist? | WHY.md |
 | What are we building? | WHAT.md |
 | What's in scope? | DEV_SCOPE.md |
@@ -112,9 +156,9 @@ UX_PRINCIPLES (How Users Experience)
 
 ## Documentation Statistics
 
-- **Total Lines**: 2,124 lines
-- **Total Files**: 6 markdown documents
-- **Coverage**: Strategy, Product, Technical, Design
+- **Total Lines**: ~3,500+ lines
+- **Total Files**: 10 markdown documents
+- **Coverage**: Strategy, Product, Technical, Design, Implementation
 
 ## Keeping Docs Updated
 
@@ -125,6 +169,10 @@ This documentation should be treated as living documents:
 - **DEV_SCOPE.md** - Updates as scope decisions are made
 - **ARCHITECTURE.md** - Updates as technical decisions are made
 - **UX_PRINCIPLES.md** - Updates as design evolves
+- **MVP_IMPLEMENTATION.md** - Updates with implementation changes
+- **VERY_MVP.md** - Reference document (stable)
+- **MVP_COMPARISON.md** - Updates if new MVP options considered
+- **GETTING_STARTED.md** - Updates with setup changes
 - **README.md** - Frequent updates (current status)
 
 ## Contributing to Docs

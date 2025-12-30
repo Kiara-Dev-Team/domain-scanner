@@ -64,7 +64,9 @@ Comprehensive documentation to understand our vision, scope, and design:
 
 - **[GETTING_STARTED.md](./GETTING_STARTED.md)** - 🚀 Quick start guide and first scan tutorial
 - **[DOCS_OVERVIEW.md](./DOCS_OVERVIEW.md)** - 📚 Documentation guide and reading paths
-- **[MVP_IMPLEMENTATION.md](./MVP_IMPLEMENTATION.md)** - 💻 Technical details of MVP implementation
+- **[MVP_IMPLEMENTATION.md](./MVP_IMPLEMENTATION.md)** - 💻 Technical details of Full MVP implementation
+- **[VERY_MVP.md](./VERY_MVP.md)** - ⚡ Ultra-minimal 3-hour CLI-only version for rapid validation
+- **[MVP_COMPARISON.md](./MVP_COMPARISON.md)** - 📊 Comparison between Full MVP and Very MVP
 - **[WHY.md](./WHY.md)** - Background and rationale for the project
 - **[WHAT.md](./WHAT.md)** - Product concept and differentiation strategy
 - **[DEV_SCOPE.md](./DEV_SCOPE.md)** - Development scope and technical boundaries

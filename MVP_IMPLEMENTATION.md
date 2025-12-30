@@ -6,6 +6,8 @@ This document describes the MVP (Minimum Viable Product) implementation of the D
 
 The MVP implementation delivers the core value proposition: transforming technical security scan results (from NUCLEI) into actionable business intelligence that non-technical decision makers can understand and act upon.
 
+> **Note:** This document describes the **Full MVP** implemented in PR #9. For a simpler 3-hour CLI-only version, see [VERY_MVP.md](./VERY_MVP.md) and [MVP_COMPARISON.md](./MVP_COMPARISON.md).
+
 ## What's Included in MVP
 
 ### ✅ Core Features Implemented
