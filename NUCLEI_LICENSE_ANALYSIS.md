@@ -1,6 +1,6 @@
 # Nuclei License Analysis and Legal Risk Assessment
 
-**Date:** December 30, 2025  
+**Date:** December 2024  
 **Project:** domain-scanner  
 **Subject:** ProjectDiscovery Nuclei Vulnerability Scanner
 
@@ -79,13 +79,15 @@ Our project uses the **MIT License** (see LICENSE file), which is:
 
 ## 5. Compliance Checklist
 
-To use Nuclei legally in domain-scanner:
+To use Nuclei legally in domain-scanner, complete the following when integrating Nuclei:
 
 - [ ] Include Nuclei's LICENSE text in our repository or binary distributions
 - [ ] Add attribution in README or NOTICES file acknowledging ProjectDiscovery
 - [ ] Do NOT remove copyright notices from Nuclei source code
 - [ ] Do NOT use ProjectDiscovery trademarks without permission
 - [ ] Accept that Nuclei is provided "AS IS" without warranty
+
+**Note:** Check these items when actually integrating Nuclei as a dependency. Basic attribution has been added to NOTICES.md and README.md.
 
 ## 6. Recommendations
 
@@ -165,6 +167,8 @@ Consider consulting with a qualified intellectual property attorney.
 
 ---
 
-**Prepared by:** GitHub Copilot  
+**Prepared by:** Kiara Development Team  
 **Review Status:** Initial Analysis  
 **Next Review Date:** When adding Nuclei as dependency, or annually
+
+**Disclaimer:** This analysis is for informational purposes and does not constitute legal advice. For specific legal concerns, consult with a qualified attorney.
