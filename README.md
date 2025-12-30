@@ -1,7 +1,7 @@
 # domain-scanner
 We make domain safety scanning easy, and strategy making easy.
 
-<img src="https://github.com/user-attachments/assets/8ac0a62a-d182-4800-a641-328b82f518ef" alt="Domain Scanner - Security Illustration">
+<img src="https://github.com/user-attachments/assets/8ac0a62a-d182-4800-a641-328b82f518ef" alt="Golden padlock and key illustration representing domain security" width="800">
 
 ## About
 
