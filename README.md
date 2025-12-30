@@ -68,6 +68,7 @@ Comprehensive documentation to understand our vision, scope, and design:
 - **[WHY.md](./WHY.md)** - Background and rationale for the project
 - **[WHAT.md](./WHAT.md)** - Product concept and differentiation strategy
 - **[DEV_SCOPE.md](./DEV_SCOPE.md)** - Development scope and technical boundaries
+- **[LANGUAGE_CHOICE.md](./LANGUAGE_CHOICE.md)** - Programming language analysis and recommendations ([quick summary](./LANGUAGE_CHOICE_SUMMARY.md))
 - **[ARCHITECTURE.md](./ARCHITECTURE.md)** - System architecture and design
 - **[UX_PRINCIPLES.md](./UX_PRINCIPLES.md)** - UI/UX design principles and experience definition
 
@@ -204,18 +205,21 @@ See [DEV_SCOPE.md](./DEV_SCOPE.md) for detailed development phases.
 **Foundation:**
 - [NUCLEI](https://github.com/projectdiscovery/nuclei) - Security scanning engine
 
-**Backend (Planned):**
-- Language: Go / Python / Node.js (TypeScript) - TBD
+**Backend (Recommended):**
+- Language: **TypeScript** (Node.js) - [Quick summary](./LANGUAGE_CHOICE_SUMMARY.md) | [Full analysis](./LANGUAGE_CHOICE.md)
+- Framework: NestJS (enterprise-ready, structured)
 - Database: PostgreSQL
 - Cache: Redis
-- Queue: Redis + Bull / Celery
+- Queue: Bull (Redis-backed)
 
-**Frontend (Planned):**
+**Frontend:**
 - Framework: React + TypeScript
 - UI Library: TailwindCSS + shadcn/ui
 - Visualization: Recharts + D3.js
 
-See [ARCHITECTURE.md](./ARCHITECTURE.md) for complete technical architecture.
+**LLM Integration:**
+- TypeScript SDKs (OpenAI, Anthropic, etc.)
+- API-based approach (no separate Python service needed)
 
 ## Contributing
 

@@ -33,11 +33,17 @@ This document provides a guide to all project documentation and how to navigate 
 │   ├── Data flow
 │   └── Deployment strategy
 │
-└── 📔 UX_PRINCIPLES.md - "How users experience it"
-    ├── Target user profile
-    ├── Design principles
-    ├── Interaction patterns
-    └── Visual guidelines
+├── 📔 UX_PRINCIPLES.md - "How users experience it"
+│   ├── Target user profile
+│   ├── Design principles
+│   ├── Interaction patterns
+│   └── Visual guidelines
+│
+└── 🔧 LANGUAGE_CHOICE.md - "Technology stack decision"
+    ├── Programming language analysis
+    ├── Backend/Frontend recommendations
+    ├── LLM integration approach
+    └── Decision rationale
 ```
 
 ## Reading Paths
@@ -61,10 +67,11 @@ This document provides a guide to all project documentation and how to navigate 
 4. **UX_PRINCIPLES.md** - User experience goals
 
 ### For Engineers
-1. **ARCHITECTURE.md** - Technical architecture and stack
-2. **DEV_SCOPE.md** - Scope and technical constraints
-3. **WHAT.md** - Product features to implement
-4. **UX_PRINCIPLES.md** - Frontend requirements
+1. **LANGUAGE_CHOICE.md** - Technology stack decisions and rationale
+2. **ARCHITECTURE.md** - Technical architecture and stack
+3. **DEV_SCOPE.md** - Scope and technical constraints
+4. **WHAT.md** - Product features to implement
+5. **UX_PRINCIPLES.md** - Frontend requirements
 
 ### For Business Stakeholders
 1. **WHY.md** - Business case and value
@@ -106,15 +113,16 @@ UX_PRINCIPLES (How Users Experience)
 | Why does this project exist? | WHY.md |
 | What are we building? | WHAT.md |
 | What's in scope? | DEV_SCOPE.md |
+| What tech stack should we use? | LANGUAGE_CHOICE.md |
 | How is it architected? | ARCHITECTURE.md |
 | How should the UX be? | UX_PRINCIPLES.md |
 | Where do I start? | README.md |
 
 ## Documentation Statistics
 
-- **Total Lines**: 2,124 lines
-- **Total Files**: 6 markdown documents
-- **Coverage**: Strategy, Product, Technical, Design
+- **Total Lines**: 3,000+ lines
+- **Total Files**: 7 markdown documents
+- **Coverage**: Strategy, Product, Technical, Design, Technology Decisions
 
 ## Keeping Docs Updated
 
@@ -123,6 +131,7 @@ This documentation should be treated as living documents:
 - **WHY.md** - Rarely changes (core motivation stable)
 - **WHAT.md** - Updates as product vision evolves
 - **DEV_SCOPE.md** - Updates as scope decisions are made
+- **LANGUAGE_CHOICE.md** - Stable once decided (foundational decision)
 - **ARCHITECTURE.md** - Updates as technical decisions are made
 - **UX_PRINCIPLES.md** - Updates as design evolves
 - **README.md** - Frequent updates (current status)
