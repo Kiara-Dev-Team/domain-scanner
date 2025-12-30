@@ -38,6 +38,7 @@ We translate technical findings into business language with clear action plans:
 
 Comprehensive documentation to understand our vision, scope, and design:
 
+- **[DOCS_OVERVIEW.md](./DOCS_OVERVIEW.md)** - 📚 Documentation guide and reading paths
 - **[WHY.md](./WHY.md)** - Background and rationale for the project
 - **[WHAT.md](./WHAT.md)** - Product concept and differentiation strategy
 - **[DEV_SCOPE.md](./DEV_SCOPE.md)** - Development scope and technical boundaries
