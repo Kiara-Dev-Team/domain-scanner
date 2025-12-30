@@ -124,7 +124,7 @@ See [DEV_SCOPE.md](./DEV_SCOPE.md) for detailed development phases.
 - [NUCLEI](https://github.com/projectdiscovery/nuclei) - Security scanning engine
 
 **Backend (Recommended):**
-- Language: **TypeScript** (Node.js) - [See detailed analysis](./LANGUAGE_CHOICE.md)
+- Language: **TypeScript** (Node.js) - [Quick summary](./LANGUAGE_CHOICE_SUMMARY.md) | [Full analysis](./LANGUAGE_CHOICE.md)
 - Framework: NestJS (enterprise-ready, structured)
 - Database: PostgreSQL
 - Cache: Redis
@@ -139,7 +139,7 @@ See [DEV_SCOPE.md](./DEV_SCOPE.md) for detailed development phases.
 - TypeScript SDKs (OpenAI, Anthropic, etc.)
 - API-based approach (no separate Python service needed)
 
-See [LANGUAGE_CHOICE.md](./LANGUAGE_CHOICE.md) for complete technology stack analysis and decision rationale.
+See [LANGUAGE_CHOICE_SUMMARY.md](./LANGUAGE_CHOICE_SUMMARY.md) for quick overview or [LANGUAGE_CHOICE.md](./LANGUAGE_CHOICE.md) for complete analysis.
 
 ## Contributing
 
