@@ -1,6 +1,8 @@
 # domain-scanner
 We make domain safety scanning easy, and strategy making easy.
 
+<img src="https://github.com/user-attachments/assets/8ac0a62a-d182-4800-a641-328b82f518ef" alt="Domain Scanner - Security Illustration">
+
 ## About
 
 This project uses vulnerability scanning technologies to help identify and analyze domain security issues.
@@ -186,6 +188,8 @@ MIT License - see [LICENSE](./LICENSE) file for details.
 ## Acknowledgments
 
 Built on top of [NUCLEI](https://github.com/projectdiscovery/nuclei) by [ProjectDiscovery](https://projectdiscovery.io). We're grateful for their excellent open-source security tooling.
+
+Header image: [Golden padlock and key illustration](https://unsplash.com/illustrations/a-golden-padlock-and-key-on-a-dark-background-OAdjlX3-qf8) from Unsplash.
 
 ---
 
