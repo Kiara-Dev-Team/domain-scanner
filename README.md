@@ -60,7 +60,9 @@ We translate technical findings into business language with clear action plans:
 
 Comprehensive documentation to understand our vision, scope, and design:
 
+- **[GETTING_STARTED.md](./GETTING_STARTED.md)** - 🚀 Quick start guide and first scan tutorial
 - **[DOCS_OVERVIEW.md](./DOCS_OVERVIEW.md)** - 📚 Documentation guide and reading paths
+- **[MVP_IMPLEMENTATION.md](./MVP_IMPLEMENTATION.md)** - 💻 Technical details of MVP implementation
 - **[WHY.md](./WHY.md)** - Background and rationale for the project
 - **[WHAT.md](./WHAT.md)** - Product concept and differentiation strategy
 - **[DEV_SCOPE.md](./DEV_SCOPE.md)** - Development scope and technical boundaries
