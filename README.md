@@ -64,7 +64,7 @@ Comprehensive documentation to understand our vision, scope, and design:
 - **[WHY.md](./WHY.md)** - Background and rationale for the project
 - **[WHAT.md](./WHAT.md)** - Product concept and differentiation strategy
 - **[DEV_SCOPE.md](./DEV_SCOPE.md)** - Development scope and technical boundaries
-- **[LANGUAGE_CHOICE.md](./LANGUAGE_CHOICE.md)** - Programming language analysis and recommendations
+- **[LANGUAGE_CHOICE.md](./LANGUAGE_CHOICE.md)** - Programming language analysis and recommendations ([quick summary](./LANGUAGE_CHOICE_SUMMARY.md))
 - **[ARCHITECTURE.md](./ARCHITECTURE.md)** - System architecture and design
 - **[UX_PRINCIPLES.md](./UX_PRINCIPLES.md)** - UI/UX design principles and experience definition
 
@@ -138,8 +138,6 @@ See [DEV_SCOPE.md](./DEV_SCOPE.md) for detailed development phases.
 **LLM Integration:**
 - TypeScript SDKs (OpenAI, Anthropic, etc.)
 - API-based approach (no separate Python service needed)
-
-See [LANGUAGE_CHOICE_SUMMARY.md](./LANGUAGE_CHOICE_SUMMARY.md) for quick overview or [LANGUAGE_CHOICE.md](./LANGUAGE_CHOICE.md) for complete analysis.
 
 ## Contributing
 

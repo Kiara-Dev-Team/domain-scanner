@@ -1145,7 +1145,7 @@ Node.js has excellent subprocess and JSON support.
 ---
 
 **Document Version**: 1.0  
-**Last Updated**: 2025-12-30  
+**Last Updated**: 2024-12-30  
 **Status**: Recommendation for discussion  
 
-This analysis is based on current (2024-2025) technology landscape and project requirements. Please provide feedback and we can refine the recommendation based on team expertise and specific constraints.
+This analysis is based on the current (2024) technology landscape and project requirements. Please provide feedback and we can refine the recommendation based on team expertise and specific constraints.
