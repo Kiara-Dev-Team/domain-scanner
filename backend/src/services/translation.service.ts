@@ -90,7 +90,7 @@ export class TranslationEngine {
     if (
       severity === 'critical' ||
       tags.some(t => ['rce', 'sqli', 'xxe', 'ssti'].includes(t.toLowerCase())) ||
-      finding.info.name.toLowerCase().includes('exposed') && finding.info.name.toLowerCase().includes('credential')
+      (finding.info.name.toLowerCase().includes('exposed') && finding.info.name.toLowerCase().includes('credential'))
     ) {
       return Priority.IMMEDIATE;
     }

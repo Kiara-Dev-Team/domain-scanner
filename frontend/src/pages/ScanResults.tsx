@@ -24,7 +24,7 @@ export const ScanResults: React.FC = () => {
       }, 5000);
       return () => clearInterval(interval);
     }
-  }, [id]);
+  }, [id, result?.scan.status]);
 
   const loadResults = async () => {
     try {

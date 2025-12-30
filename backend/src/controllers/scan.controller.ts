@@ -28,9 +28,14 @@ export class ScanController {
       }
 
       // Validate domain format (basic validation)
-      const domainRegex = /^[a-zA-Z0-9][a-zA-Z0-9-]{0,61}[a-zA-Z0-9]?\.[a-zA-Z]{2,}$/;
-      if (!domainRegex.test(targetDomain) && !targetDomain.startsWith('http')) {
-        return res.status(400).json({ error: 'Invalid domain format' });
+      // Accept domains (example.com) or URLs (https://example.com)
+      const domainRegex = /^([a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]\.)+[a-zA-Z]{2,}$/;
+      const urlRegex = /^https?:\/\/([a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]\.)+[a-zA-Z]{2,}/;
+      
+      if (!domainRegex.test(targetDomain) && !urlRegex.test(targetDomain)) {
+        return res.status(400).json({ 
+          error: 'Invalid domain format. Use example.com or https://example.com' 
+        });
       }
 
       // Create scan record
