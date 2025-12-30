@@ -512,7 +512,7 @@ Once validated, we can add:
 ## Documentation References
 
 - **[MVP_IMPLEMENTATION.md](./MVP_IMPLEMENTATION.md)** - Full MVP technical details
-- **[MVP_COMPARISON.md](./MVP_COMPARISON.md)** - Detailed comparison framework
+- **Comparison framework** - See "Comparison: Very MVP vs Full MVP" section above
 - **[GETTING_STARTED.md](./GETTING_STARTED.md)** - How to use Full MVP
 - **[ARCHITECTURE.md](./ARCHITECTURE.md)** - Full system architecture
 - **[NUCLEI_LICENSE_ANALYSIS.md](./NUCLEI_LICENSE_ANALYSIS.md)** - Legal review
