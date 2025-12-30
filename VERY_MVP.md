@@ -197,7 +197,7 @@ const chalk = require('chalk');
 program
   .argument('<domain>', 'Domain to scan')
   .description('Scan a domain and translate findings to business language')
-  .action(async (domain) => {
+  .action((domain) => {
     console.log(chalk.blue(`Scanning ${domain}...`));
     
     try {
@@ -273,10 +273,20 @@ const BUSINESS_TRANSLATIONS = {
 // Map NUCLEI severity to business priority
 const PRIORITY_MAP = {
   'critical': { level: 'CRITICAL', color: chalk.red, icon: '🔴' },
-  'high': { level: 'HIGH', color: chalk.yellow, icon: '🟠' },
-  'medium': { level: 'MEDIUM', color: chalk.blue, icon: '🟡' },
+  'high': { level: 'HIGH', color: chalk.hex('#FFA500'), icon: '🟠' },
+  'medium': { level: 'MEDIUM', color: chalk.yellow, icon: '🟡' },
   'low': { level: 'LOW', color: chalk.green, icon: '🟢' }
 };
+
+function getDefaultTranslation() {
+  return {
+    risk: 'Operational',
+    impact: 'Security issue detected. Review required.',
+    action: 'Investigate and assess impact',
+    owner: 'Security Team',
+    timeframe: '1 week'
+  };
+}
 
 function translateFindings(findings) {
   return findings.map(finding => {
@@ -476,6 +486,7 @@ Once validated, we can add:
 6. **No output formats** - Console only, no JSON/CSV export
 7. **No scan history** - Results lost after display
 8. **Single domain only** - No batch scanning
+9. **No input validation** - Domain parameter passed directly to shell (acceptable for throwaway prototype, but production code should validate/sanitize inputs)
 
 **These are acceptable trade-offs for 3-hour validation.**
 
