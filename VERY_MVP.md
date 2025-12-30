@@ -170,7 +170,9 @@ Once validated, we can add:
 
 ## Comparison: Very MVP vs Full MVP
 
-| Feature | Very MVP (3h) | Full MVP (PR #9) |
+> **Note:** "Full MVP" refers to the complete web application delivered in PR #9, which includes React frontend, Express backend, PostgreSQL database, and Docker deployment.
+
+| Feature | Very MVP (3h) | Full MVP (Complete Web App) |
 |---------|--------------|------------------|
 | Interface | CLI | Web UI |
 | Translation | 5 types | Comprehensive |
