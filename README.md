@@ -62,7 +62,9 @@ We translate technical findings into business language with clear action plans:
 
 Comprehensive documentation to understand our vision, scope, and design:
 
+- **[GETTING_STARTED.md](./GETTING_STARTED.md)** - 🚀 Quick start guide and first scan tutorial
 - **[DOCS_OVERVIEW.md](./DOCS_OVERVIEW.md)** - 📚 Documentation guide and reading paths
+- **[MVP_IMPLEMENTATION.md](./MVP_IMPLEMENTATION.md)** - 💻 Technical details of MVP implementation
 - **[WHY.md](./WHY.md)** - Background and rationale for the project
 - **[WHAT.md](./WHAT.md)** - Product concept and differentiation strategy
 - **[DEV_SCOPE.md](./DEV_SCOPE.md)** - Development scope and technical boundaries
@@ -71,22 +73,97 @@ Comprehensive documentation to understand our vision, scope, and design:
 
 ## Quick Start
 
-> **Note:** Domain Scanner is currently under active development. This section will be updated with installation and usage instructions as the project progresses.
-
 ### Prerequisites
 
-- [NUCLEI](https://github.com/projectdiscovery/nuclei) installed
-- Docker and Docker Compose (recommended)
+- **[NUCLEI](https://github.com/projectdiscovery/nuclei)** - The scanning engine (required)
+- **Docker & Docker Compose** - For easy deployment (recommended)
+- **Node.js 18+** - For local development (if not using Docker)
+- **PostgreSQL 15+** - Database (via Docker or local)
+- **Redis 7+** - Queue system (via Docker or local)
 
-### Installation
+### Installing NUCLEI
+
+```bash
+# macOS (Homebrew)
+brew install nuclei
+
+# Linux
+go install -v github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest
+
+# Or download binary from: https://github.com/projectdiscovery/nuclei/releases
+```
+
+Verify installation:
+```bash
+nuclei -version
+```
+
+### Installation (Docker - Recommended)
 
 ```bash
 # Clone the repository
 git clone https://github.com/Kiara-Dev-Team/domain-scanner.git
 cd domain-scanner
 
-# More instructions coming soon
+# Copy environment file
+cp .env.example .env
+
+# Start all services with Docker Compose
+docker-compose up -d
+
+# Wait for services to be ready (about 30 seconds)
+docker-compose logs -f
+
+# Access the application:
+# - Web UI: http://localhost:3000
+# - API: http://localhost:3001/api
+# - Health Check: http://localhost:3001/health
 ```
+
+### Installation (Local Development)
+
+```bash
+# Clone the repository
+git clone https://github.com/Kiara-Dev-Team/domain-scanner.git
+cd domain-scanner
+
+# Copy environment file
+cp .env.example .env
+
+# Install dependencies
+npm install
+
+# Start PostgreSQL and Redis (using Docker)
+docker-compose up -d postgres redis
+
+# Install backend dependencies
+cd backend
+npm install
+cd ..
+
+# Install frontend dependencies
+cd frontend
+npm install
+cd ..
+
+# Start development servers (from project root)
+npm run dev
+
+# Access the application:
+# - Web UI: http://localhost:3000
+# - API: http://localhost:3001/api
+```
+
+### Running Your First Scan
+
+1. Open http://localhost:3000 in your browser
+2. Click "Start New Scan"
+3. Enter a domain (e.g., `example.com` or `https://example.com`)
+4. Click "Start Scan"
+5. Wait for the scan to complete (1-5 minutes)
+6. View business-friendly results with actionable recommendations
+
+**⚠️ Important:** Only scan domains you own or have explicit permission to scan.
 
 ## Use Cases
 
@@ -98,11 +175,14 @@ cd domain-scanner
 
 ## Roadmap
 
-### Phase 1: MVP (Current)
-- [ ] NUCLEI integration
-- [ ] Basic business translation engine
-- [ ] Simple web dashboard
-- [ ] PDF/HTML reporting
+### Phase 1: MVP (Current) ✅
+- [x] NUCLEI integration
+- [x] Basic business translation engine
+- [x] Simple web dashboard
+- [x] Executive summary view
+- [x] Business-first findings with progressive disclosure
+- [x] Mobile-responsive UI
+- [ ] PDF/HTML reporting (planned)
 
 ### Phase 2: Core Features
 - [ ] Advanced translation engine
